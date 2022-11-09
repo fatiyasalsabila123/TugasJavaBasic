@@ -105,7 +105,7 @@ public class TugasJavaBasic {
                                         System.out.println(
                                                 "Silahkan Pilih Nomor \n 1. Balok \n 2. Kubus \n 3. Bola \n 4. Exit");
                                         volume = sc.nextInt();
-                                        System.out.print("Anda Memilih Nomor : " + volume);
+                                        System.out.println("Anda Memilih Nomor : " + volume);
                                         switch (volume) {
                                             case 1:
                                                 System.out.println("Rumus Balok v = p * l * t");
@@ -115,21 +115,21 @@ public class TugasJavaBasic {
                                                 lebar = sc.nextInt();
                                                 System.out.println("Masukan Tingi Balok : ");
                                                 tinggi = sc.nextInt();
-                                                System.out.println("Hasil : " + (panjang * lebar * tinggi) + "Liter");
+                                                System.out.println("Hasil : " + (panjang * lebar * tinggi) + " Liter");
                                                 break;
                                             case 2:
                                                 System.out.println("Rumus Volume Kubus v = s * s ");
                                                 System.out.println("Masukan Sisi Kubus : ");
                                                 s = sc.nextInt();
-                                                System.out.println("Hasil : " + (s * s) + "Liter");
+                                                System.out.println("Hasil : " + (s * s) + " Liter");
                                                 break;
 
                                             case 3:
                                                 System.out.println("Rumus Volume Bola V = 4/3 22/7 * r³");
-                                                System.out.println("Masukan Jari2 : ");
+                                                System.out.println("Masukan Jari-jari : ");
                                                 jari2 = sc.nextInt();
                                                 System.out.println(
-                                                        "Hasil : " + (22 * jari2 * jari2 * jari2 / 7) + "Liter");
+                                                        "Hasil : " + (4 * 22 * jari2 * jari2 * jari2 / 7 / 3 ) + " Liter");
                                                 break;
 
                                             default:
@@ -185,13 +185,11 @@ public class TugasJavaBasic {
                                                             break;
                                                         case 2:
                                                             System.out.println(
-                                                                    "Rumus Celsius ke Fahrenheit   : T (° F) = T (° C) * 9/5 + 32");
+                                                                    "Rumus Celsius ke Fahrenheit   : T (°F) = T (° C) * 9/5 + 32");
                                                             System.out.println("Masukan Celsius : ");
                                                             c = sc.nextInt();
-                                                            System.out.println("Tambahkan Bilangan : 32");
-                                                            far = sc.nextInt();
                                                             System.out.println(
-                                                                    "Hasil :° F = " + (c * 9 + far / 5)
+                                                                    "Hasil : " + (c * 9 + far / 5)
                                                                             + " °F");
                                                             break;
 
@@ -212,7 +210,7 @@ public class TugasJavaBasic {
                                                             System.out.println("Rumus Reamur Ke Celsius : 5/4 x °R");
                                                             System.out.println("Masukan Reamur : ");
                                                             R1 = sc.nextInt();
-                                                            System.out.println("Hasil :" + (5 * R1 / 4)+ " °C" );
+                                                            System.out.println("Hasil : " + ( 5 * R1 / 4)+ " °C" );
                                                             break;
 
                                                         case 2:
@@ -222,7 +220,7 @@ public class TugasJavaBasic {
                                                             System.out.println("Masukan Reamur : ");
                                                             R1 = sc.nextInt();
                                                             System.out.println(
-                                                                    "Hasil :" + ( 9 * R1 + far / 4)+ " °F" );
+                                                                    "Hasil : " + ( 9 * R1 + far / 4)+ " °F" );
                                                             break;
 
                                                         default:
@@ -253,8 +251,6 @@ public class TugasJavaBasic {
                                                                     "Rumus Fahrenheit ke Reamur :°F -32 * 4/9");
                                                             System.out.println("Masukan Fahrenheit : ");
                                                             fahrenheit = sc.nextInt();
-                                                            System.out.println("Masukan Bilnangan : 32");
-                                                            far = sc.nextInt();
                                                             System.out
                                                                     .println("Hasil : " + ( 4 * fahrenheit - far / 9)+ " °R");
                                                             break;
