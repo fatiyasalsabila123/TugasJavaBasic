@@ -149,11 +149,7 @@ public class TugasJavaBasic {
                         int konversi;
                         int c;
                         // reamur ke celsius
-                        int R1;
-                        // reamur ke fanhareit
-                        int Re;
-                        
-                        
+                        int R1;                        
                         // fahrenheit
                         int fahrenheit;
                        
