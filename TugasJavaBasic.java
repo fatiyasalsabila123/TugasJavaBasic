@@ -72,7 +72,6 @@ public class TugasJavaBasic {
                                                 System.out.println("Rumus Luas Persegi s * s ");
                                                 System.out.println("Masukan Sisi Persegi");
                                                 s = sc.nextInt();
-                                               
                                                 System.out.println("Hasil : " + (s * s) + " m²");
                                                 break;
                                             case 3:
