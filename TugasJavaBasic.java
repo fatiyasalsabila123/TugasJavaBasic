@@ -144,11 +144,11 @@ public class TugasJavaBasic {
 
                     case 2:
                         int konversi;
-                        int c;
+                        float c;
                         // reamur ke celsius
-                        int R1;                        
+                        float R1;                        
                         // fahrenheit
-                        int fahrenheit;
+                        float fahrenheit;
                        
                         int far = 32;
                         do {
@@ -179,14 +179,14 @@ public class TugasJavaBasic {
                                                             System.out
                                                                     .println("Rumus Celsius Ke Reamur : °R = 4/5 * °C");
                                                             System.out.println("Masukan celsius : ");
-                                                            c = sc.nextInt();
+                                                            c = sc.nextFloat();
                                                             System.out.println("Hasil : " + (4 * c / 5) + " °R");
                                                             break;
                                                         case 2:
                                                             System.out.println(
                                                                     "Rumus Celsius ke Fahrenheit   : T (°F) = T (° C) * 9/5 + 32");
                                                             System.out.println("Masukan Celsius : ");
-                                                            c = sc.nextInt();
+                                                            c = sc.nextFloat();
                                                             System.out.println(
                                                                     "Hasil : " + ((c * 9/5) + far )
                                                                             + " °F");
@@ -208,18 +208,18 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Rumus Reamur Ke Celsius : 5/4 x °R");
                                                             System.out.println("Masukan Reamur : ");
-                                                            R1 = sc.nextInt();
+                                                            R1 = sc.nextFloat();
                                                             System.out.println("Hasil : " + ( 5 * R1 / 4)+ " °C" );
                                                             break;
 
                                                         case 2:
                                                             System.out.println("Anda Memilih Reamur Ke Fahrenheit");
                                                             System.out.println(
-                                                                    "Rumus Reamur Ke Fahrenheit :  °F = (9/4 x °R) +32");
+                                                                    "Rumus Reamur Ke Fahrenheit :  °F = (9 * R /4 + 32)");
                                                             System.out.println("Masukan Reamur : ");
-                                                            R1 = sc.nextInt();
+                                                            R1 = sc.nextFloat();
                                                             System.out.println(
-                                                                    "Hasil : " + ( 9 * R1 + far / 4)+ " °F" );
+                                                                    "Hasil : " + ( (9 *  R1 / 4 + far))+ " °F" );
                                                             break;
 
                                                         default:
@@ -237,21 +237,22 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Anda Memillih  Fahrenheit ke Celsius");
                                                             System.out.println(
-                                                                    "Rumus Fahrenheit ke Celsius : C = 5/9 (F-32)");
+                                                                    "Rumus Fahrenheit ke Celsius :(ºF - 32) * 5/9");
                                                             System.out.print("Masukan Fahrenheit : ");
-                                                            fahrenheit = sc.nextInt();
+                                                            fahrenheit = sc.nextFloat();
                                                             System.out.println(
-                                                                    "Hasil : " + (5 * fahrenheit - far / 9) + " °C"
+                                                                    "Hasil : " + ((fahrenheit - far)* 5/9) + " °C"
                                                                             );
                                                             break;
                                                         case 2:
                                                             System.out.println("Anda Memilih Fahrenheit ke Reamur");
                                                             System.out.println(
-                                                                    "Rumus Fahrenheit ke Reamur :°F -32 * 4/9");
+                                                                    "Rumus Fahrenheit ke Reamur : R = 4* (fahrenheit - 32)/ 9)");
                                                             System.out.println("Masukan Fahrenheit : ");
-                                                            fahrenheit = sc.nextInt();
+                                                            fahrenheit = sc.nextFloat();
                                                             System.out
-                                                                    .println("Hasil : " + ( 4 * fahrenheit - far / 9)+ " °R");
+                                                                    .println("Hasil : " + ((4* (fahrenheit - 32)/ 9)
+                                                                    + " °R"));
                                                             break;
                                                         default:
                                                             break;
@@ -274,37 +275,37 @@ public class TugasJavaBasic {
                                             case 1:
                                                 System.out.println("Km = Kilo Meter");
                                                 System.out.print("Masukan meter = ");
-                                                meter2 = sc.nextInt();
+                                                meter2 = sc.nextFloat();
                                                 System.out.println("Hasil : " + (meter2 / 1000) + " Km =  Kilo Meter");
                                                 break;
                                             case 2:
                                                 System.out.println("Hm = Hekto Meter");
                                                 System.out.print("Masukan meter : ");
-                                                meter2 = sc.nextInt();
+                                                meter2 = sc.nextFloat();
                                                 System.out.println("Hasil : Hm = " + (meter2 / 100) + " Hm = Hekto Meter");
                                                 break;
                                             case 3:
                                                 System.out.println("Dam = Deka Meter");
                                                 System.out.print("Masukan meter : ");
-                                                meter2 = sc.nextInt();
+                                                meter2 = sc.nextFloat();
                                                 System.out.println("Hasil : Dam = " + (meter2 / 10) + " Dam = Deka Meter");
                                                 break;
                                             case 4:
                                                 System.out.println("Dm = Desi Meter");
                                                 System.out.print("Masukan meter : ");
-                                                meter2 = sc.nextInt();
+                                                meter2 = sc.nextFloat();
                                                 System.out.println("Hasil : Dm = " + (meter2 * 10) + " Dm = Desi Meter");
                                                 break;
                                             case 5:
                                                 System.out.println("Cm = Centi Meter");
                                                 System.out.print("Masukan meter : ");
-                                                meter2 = sc.nextInt();
+                                                meter2 = sc.nextFloat();
                                                 System.out.println("Hasil : Cm = " + (meter2 * 100) + " Cm = Centi Meter");
                                                 break;
                                             case 6:
                                                 System.out.println(" Mm = Mili Meter");
                                                 System.out.print("Masukan meter : ");
-                                                meter2 = sc.nextInt();
+                                                meter2 = sc.nextFloat();
                                                 System.out
                                                         .println("Hasil : Mm = " + (meter2 * 1000) + "  Mm = Mili Meter");
                                                 break;
@@ -327,37 +328,37 @@ public class TugasJavaBasic {
                                             case 1:
                                                 System.out.println("Kg = Kilogram");
                                                 System.out.print("Masukan Gram : ");
-                                                gram = sc.nextInt();
+                                                gram = sc.nextFloat();
                                                 System.out.println("Hasil : " + (gram / 1000) + " Kg = Kilogram");
                                                 break;
                                             case 2:
                                                 System.out.println("Hg(ons) = Hektogram");
                                                 System.out.print("Masukan Gram : ");
-                                                gram = sc.nextInt();
+                                                gram = sc.nextFloat();
                                                 System.out.println("Hasil : " + (gram / 100) + " Hg(ons) = Hektogram");
                                                 break;
                                             case 3:
                                                 System.out.println("Dag = Dekagram");
                                                 System.out.print("Masukan Gram : ");
-                                                gram = sc.nextInt();
+                                                gram = sc.nextFloat();
                                                 System.out.println("Hasil : " + (gram / 10) + " Dag = Dekagram");
                                                 break;
                                             case 4:
                                                 System.out.println(" Dg = DesiGram");
                                                 System.out.print("Masukan Gram : ");
-                                                gram = sc.nextInt();
+                                                gram = sc.nextFloat();
                                                 System.out.println("Hasil : " + (gram * 10) + "  Dg = DesiGram");
                                                 break;
                                             case 5:
                                                 System.out.println("Cg = Sentigram");
                                                 System.out.print("Masukan Gram : ");
-                                                gram = sc.nextInt();
+                                                gram = sc.nextFloat();
                                                 System.out.println("Hasil : " + (gram * 100) + " Cg = Sentigram");
                                                 break;
                                             case 6:
                                                 System.out.println("Mg = Miligram");
                                                 System.out.print("Masukan Gram : ");
-                                                gram = sc.nextInt();
+                                                gram = sc.nextFloat();
                                                 System.out.println("Hasil : " + (gram * 1000) + " Mg = Miligram");
                                                 break;
 
