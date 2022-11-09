@@ -188,7 +188,7 @@ public class TugasJavaBasic {
                                                             System.out.println("Masukan Celsius : ");
                                                             c = sc.nextInt();
                                                             System.out.println(
-                                                                    "Hasil : " + (c * 9 + far / 5)
+                                                                    "Hasil : " + (9 * c * + far / 5)
                                                                             + " °F");
                                                             break;
 
