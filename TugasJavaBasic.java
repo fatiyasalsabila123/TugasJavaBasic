@@ -414,7 +414,7 @@ public class TugasJavaBasic {
                                         break;
                                 }
                             } while (rahasia < 4);
-                            System.out.println("Kembali Ke Menu Awal");
+                            System.out.println("Kembali Ke Menu Pertama");
                             break;
                         } else {
                             System.out.println("Kembali Ke Menu Awal");
