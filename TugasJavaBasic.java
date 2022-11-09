@@ -40,7 +40,7 @@ public class TugasJavaBasic {
                             System.out.println("Bagian Bangun Ruang/Datar : ");
 
                             System.out.println(
-                                    " Silahkan pilih nomor \n 1.  Luas (Meter Kuadrat) \n 2. Volume (Liter) \n 3. Exit");
+                                    " Silahkan pilih nomor \n 1. Luas (Meter Kuadrat) \n 2. Volume (Liter) \n 3. Exit");
                             volumeLuas = sc.nextInt();
 
                             System.out.println("Anda Memilih Nomor : " + volumeLuas);
@@ -84,9 +84,7 @@ public class TugasJavaBasic {
                                                 System.out.println("Hasil : " + (1 * alas * t / 2) + " m² ");
                                                 break;
                                             case 4:
-                                                System.out.println("Rumus LUas Lingkaran L = pi * r * r");
-                                                System.out.println("Masukan r Lingkaran : ");
-                                                r = sc.nextInt();
+                                                System.out.println("Rumus Luas Lingkaran L = pi * r * r");
                                                 System.out.println("Masukan r Lingkaran : ");
                                                 r = sc.nextInt();
                                                 System.out.println("Hasil : " + (22 * r * r / 7) + " m²");
@@ -386,7 +384,7 @@ public class TugasJavaBasic {
 
                             do {
                                 System.out.println("Silahkan Pilih Menu Rahasia");
-                                System.out.println("1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit");
+                                System.out.println(" 1. Uppercase \n 2. Lowercase \n 3. Reverse \n 4. Exit");
                                 rahasia = sc.nextInt();
                                 System.out.println("Anda Memilih Nomor : " +
                                         rahasia);
