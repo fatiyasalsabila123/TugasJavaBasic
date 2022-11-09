@@ -178,14 +178,14 @@ public class TugasJavaBasic {
                                                             System.out.println("1. Celsius Ke Reamur");
                                                             System.out
                                                                     .println("Rumus Celsius Ke Reamur : °R = 4/5 * °C");
-                                                            System.out.println("Masukan celsius : ");
+                                                            System.out.print("Masukan celsius : ");
                                                             c = sc.nextFloat();
                                                             System.out.println("Hasil : " + (4 * c / 5) + " °R");
                                                             break;
                                                         case 2:
                                                             System.out.println(
                                                                     "Rumus Celsius ke Fahrenheit   : T (°F) = T (° C) * 9/5 + 32");
-                                                            System.out.println("Masukan Celsius : ");
+                                                            System.out.print("Masukan Celsius : ");
                                                             c = sc.nextFloat();
                                                             System.out.println(
                                                                     "Hasil : " + ((c * 9/5) + far )
@@ -207,7 +207,7 @@ public class TugasJavaBasic {
                                                     switch (konversi) {
                                                         case 1:
                                                             System.out.println("Rumus Reamur Ke Celsius : 5/4 x °R");
-                                                            System.out.println("Masukan Reamur : ");
+                                                            System.out.print("Masukan Reamur : ");
                                                             R1 = sc.nextFloat();
                                                             System.out.println("Hasil : " + ( 5 * R1 / 4)+ " °C" );
                                                             break;
@@ -216,7 +216,7 @@ public class TugasJavaBasic {
                                                             System.out.println("Anda Memilih Reamur Ke Fahrenheit");
                                                             System.out.println(
                                                                     "Rumus Reamur Ke Fahrenheit :  °F = (9 * R /4 + 32)");
-                                                            System.out.println("Masukan Reamur : ");
+                                                            System.out.print("Masukan Reamur : ");
                                                             R1 = sc.nextFloat();
                                                             System.out.println(
                                                                     "Hasil : " + ( (9 *  R1 / 4 + far))+ " °F" );
@@ -237,7 +237,7 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Anda Memillih  Fahrenheit ke Celsius");
                                                             System.out.println(
-                                                                    "Rumus Fahrenheit ke Celsius :(ºF - 32) * 5/9");
+                                                                    "Rumus Fahrenheit ke Celsius : (ºF - 32) * 5/9");
                                                             System.out.print("Masukan Fahrenheit : ");
                                                             fahrenheit = sc.nextFloat();
                                                             System.out.println(
@@ -248,7 +248,7 @@ public class TugasJavaBasic {
                                                             System.out.println("Anda Memilih Fahrenheit ke Reamur");
                                                             System.out.println(
                                                                     "Rumus Fahrenheit ke Reamur : R = 4* (fahrenheit - 32)/ 9)");
-                                                            System.out.println("Masukan Fahrenheit : ");
+                                                            System.out.print("Masukan Fahrenheit : ");
                                                             fahrenheit = sc.nextFloat();
                                                             System.out
                                                                     .println("Hasil : " + ((4* (fahrenheit - 32)/ 9)
