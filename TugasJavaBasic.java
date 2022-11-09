@@ -88,8 +88,6 @@ public class TugasJavaBasic {
                                                 r = sc.nextInt();
                                                 System.out.println("Hasil : " + (22 * r * r / 7) + " m²");
                                                 break;
-                                            default:
-                                                break;
                                         }
 
                                     } while (luas < 5);
@@ -131,8 +129,6 @@ public class TugasJavaBasic {
                                                         "Hasil : " + (4 * 22 * jari2 * jari2 * jari2 / 7 / 3 ) + " Liter");
                                                 break;
 
-                                            default:
-                                                break;
                                         }
                                     } while (volume < 4);
                                     break;
@@ -192,8 +188,6 @@ public class TugasJavaBasic {
                                                                             + " °F");
                                                             break;
 
-                                                        default:
-                                                            break;
                                                     }
 
                                                 } while (konversi < 3);
@@ -222,8 +216,6 @@ public class TugasJavaBasic {
                                                                     "Hasil : " + ( (9 *  R1 / 4 + far))+ " °F" );
                                                             break;
 
-                                                        default:
-                                                            break;
                                                     }
 
                                                 } while (konversi < 3);
@@ -310,8 +302,6 @@ public class TugasJavaBasic {
                                                         .println("Hasil : Mm = " + (meter2 * 1000) + "  Mm = Mili Meter");
                                                 break;
 
-                                            default:
-                                                break;
                                         }
 
                                     } while (meter < 7);
@@ -362,8 +352,6 @@ public class TugasJavaBasic {
                                                 System.out.println("Hasil : " + (gram * 1000) + " Mg = Miligram");
                                                 break;
 
-                                            default:
-                                                break;
                                         }
                                     } while (berat < 7);
                                     break;
@@ -410,8 +398,6 @@ public class TugasJavaBasic {
                                         System.out.println(String.join(" ", list));
                                         break;
 
-                                    default:
-                                        break;
                                 }
                             } while (rahasia < 4);
                             System.out.println("Kembali Ke Menu Pertama");
