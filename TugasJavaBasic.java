@@ -11,7 +11,7 @@ public class TugasJavaBasic {
         int bangunan;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Silahkan Login Terlebih Dahulu");
+        System.out.println("Silahkan Login Terlebih Dahulu !!!");
 
         System.out.println("Masukan Nama : ");
         nama = sc.nextLine();
@@ -24,7 +24,7 @@ public class TugasJavaBasic {
 
 
         if (nama.equals("Administrator") && pass.length() >= 5 && pin == 123456789) {
-            System.out.println("Akses Diterima, Selamat Datang");
+            System.out.println("Akses Diterima, Selamat Datang !!!");
             do {
                 System.out.println(
                         "Silahkan Pilih Menu : \n 1. Bangun Ruang/Datar \n 2. Konversi \n 3. Secret Menu \n 4. Exit");
@@ -46,68 +46,61 @@ public class TugasJavaBasic {
                             System.out.println("Anda Memilih Nomor : " + volumeLuas);
                             switch (volumeLuas) {
                                 case 1:
+                                int luas;
                                     int p, l, s;
-                                    int alas, t, segitiga = 1 / 2;
+                                    int alas, t;
                                     int r;
                                     do {
                                         System.out.println("1. Luas");
 
                                         System.out.println(
                                                 "Silahkan Pilih Nomor : \n 1. Persegi Panjang \n 2. Persegi \n 3. Segitiga \n 4. Lingkaran \n 5. Exit");
-                                        volumeLuas = sc.nextInt();
+                                        luas = sc.nextInt();
 
-                                        System.out.println("Anda Memilih Nomor : " + volumeLuas);
+                                        System.out.println("Anda Memilih Nomor : " + luas);
 
-                                        switch (volumeLuas) {
+                                        switch (luas) {
                                             case 1:
-                                                System.out.println("Soal 1");
                                                 System.out.println("Rumus Persegi Panjang p * l");
                                                 System.out.println("Masukan Panjang Persegi Panjang : ");
                                                 p = sc.nextInt();
                                                 System.out.println("Masukan Lebar Persegi Panjang : ");
                                                 l = sc.nextInt();
-                                                System.out.println("Hasil " + (p * l) + "cm³");
+                                                System.out.println("Hasil " + (p * l) + " m²");
                                                 break;
                                             case 2:
-                                                System.out.println("Soal 2");
                                                 System.out.println("Rumus Luas Persegi s * s ");
                                                 System.out.println("Masukan Sisi Persegi");
                                                 s = sc.nextInt();
-                                                System.out.println("Masukan Sisi Persegi");
-                                                s = sc.nextInt();
-                                                System.out.println("Hasil : " + (s * s) + " cm³");
+                                               
+                                                System.out.println("Hasil : " + (s * s) + " m²");
                                                 break;
                                             case 3:
-                                                System.out.println("Soal 3");
                                                 System.out.println("Rumus Segitiga 1/2 * alas * tinggi");
                                                 System.out.println("Masukan Alas Segitiga : ");
                                                 alas = sc.nextInt();
                                                 System.out.println("Masukan Tinggi Segitiga : ");
                                                 t = sc.nextInt();
-                                                System.out.println("Hasil : " + (1 * alas * t / 2) + " cm³ ");
+                                                System.out.println("Hasil : " + (1 * alas * t / 2) + " m² ");
                                                 break;
                                             case 4:
-                                                System.out.println("Soal 4");
                                                 System.out.println("Rumus LUas Lingkaran L = pi * r * r");
                                                 System.out.println("Masukan r Lingkaran : ");
                                                 r = sc.nextInt();
                                                 System.out.println("Masukan r Lingkaran : ");
                                                 r = sc.nextInt();
-                                                System.out.println("Hasil : " + (22 * r * r / 7) + " cm³");
+                                                System.out.println("Hasil : " + (22 * r * r / 7) + " m²");
                                                 break;
                                             default:
                                                 break;
                                         }
 
-                                    } while (volumeLuas < 5);
+                                    } while (luas < 5);
                                     break;
 
-                                default:
-                                    System.out.println("Anda Berhasil Keluar");
-                                    break;
                                 case 2:
                                     int volume;
-                                    int panjang, lebar, tinggi, sisi1, jari2;
+                                    int panjang, lebar, tinggi, jari2;
                                     do {
                                         System.out.println("1. Volume");
 
@@ -117,7 +110,6 @@ public class TugasJavaBasic {
                                         System.out.print("Anda Memilih Nomor : " + volume);
                                         switch (volume) {
                                             case 1:
-                                                System.out.println("Soal 1");
                                                 System.out.println("Rumus Balok v = p * l * t");
                                                 System.out.println("Masukan Panjang Balok : ");
                                                 panjang = sc.nextInt();
@@ -128,21 +120,14 @@ public class TugasJavaBasic {
                                                 System.out.println("Hasil : " + (panjang * lebar * tinggi) + "Liter");
                                                 break;
                                             case 2:
-                                                System.out.println(" Soal 2");
                                                 System.out.println("Rumus Volume Kubus v = s * s ");
                                                 System.out.println("Masukan Sisi Kubus : ");
-                                                sisi1 = sc.nextInt();
-                                                System.out.println("Masukan Sisi Kubus : ");
-                                                sisi1 = sc.nextInt();
-                                                System.out.println("Hasil : " + (sisi1 * sisi1) + "Liter");
+                                                s = sc.nextInt();
+                                                System.out.println("Hasil : " + (s * s) + "Liter");
+                                                break;
 
                                             case 3:
-                                                System.out.println("Soal 3");
-                                                System.out.println("Rumus Volume Bola V = 4/3 * r³");
-                                                System.out.println("Masukan Jari2 : ");
-                                                jari2 = sc.nextInt();
-                                                System.out.println("Masukan Jari2 : ");
-                                                jari2 = sc.nextInt();
+                                                System.out.println("Rumus Volume Bola V = 4/3 22/7 * r³");
                                                 System.out.println("Masukan Jari2 : ");
                                                 jari2 = sc.nextInt();
                                                 System.out.println(
@@ -152,7 +137,7 @@ public class TugasJavaBasic {
                                             default:
                                                 break;
                                         }
-                                    } while (volume < 3);
+                                    } while (volume < 4);
                                     break;
 
                             }
@@ -162,16 +147,16 @@ public class TugasJavaBasic {
 
                     case 2:
                         int konversi;
-                        int c, bilangan = 32;
+                        int c;
                         // reamur ke celsius
-                        int R1, Reamur = 5 / 4;
+                        int R1;
                         // reamur ke fanhareit
                         int Re;
-                        int f = 9 / 4;
-                        int g = 32;
+                        
+                        
                         // fahrenheit
                         int fahrenheit;
-                        int fa = 5 / 9;
+                       
                         int far = 32;
                         do {
                             System.out.println("2. Konversi");
@@ -210,10 +195,10 @@ public class TugasJavaBasic {
                                                             System.out.println("Masukan Celsius : ");
                                                             c = sc.nextInt();
                                                             System.out.println("Tambahkan Bilangan : 32");
-                                                            bilangan = sc.nextInt();
+                                                            far = sc.nextInt();
                                                             System.out.println(
-                                                                    "Hasil : T (° F) = " + (c * 9 + bilangan / 5)
-                                                                            + " ° F");
+                                                                    "Hasil :° F = " + (c * 9 + far / 5)
+                                                                            + " °F");
                                                             break;
 
                                                         default:
@@ -233,18 +218,17 @@ public class TugasJavaBasic {
                                                             System.out.println("Rumus Reamur Ke Celsius : 5/4 x °R");
                                                             System.out.println("Masukan Reamur : ");
                                                             R1 = sc.nextInt();
-                                                            System.out.println("Hasil :" + (5 * R1 / 4) + " °C");
+                                                            System.out.println("Hasil :" + (5 * R1 / 4)+ " °C" );
                                                             break;
 
                                                         case 2:
                                                             System.out.println("Anda Memilih Reamur Ke Fahrenheit");
                                                             System.out.println(
-                                                                    "Rumus Reamur Ke Fahrenheit : S(°F) = (S(°Ré) * 9/4) + 32");
+                                                                    "Rumus Reamur Ke Fahrenheit :  °F = (9/4 x °R) +32");
                                                             System.out.println("Masukan Reamur : ");
-                                                            Re = sc.nextInt();
-                                                            System.out.println("Masukan Bilangan : 32");
+                                                            R1 = sc.nextInt();
                                                             System.out.println(
-                                                                    "Hasil :" + (Re * 9 * bilangan / 4) + "°F");
+                                                                    "Hasil :" + ( 9 * R1 + far / 4)+ " °F" );
                                                             break;
 
                                                         default:
@@ -262,23 +246,23 @@ public class TugasJavaBasic {
                                                         case 1:
                                                             System.out.println("Anda Memillih  Fahrenheit ke Celsius");
                                                             System.out.println(
-                                                                    "Rumus Fahrenheit ke Celsius : T °C = 5/9 (T°F-32°)");
+                                                                    "Rumus Fahrenheit ke Celsius : C = 5/9 (F-32)");
                                                             System.out.print("Masukan Fahrenheit : ");
                                                             fahrenheit = sc.nextInt();
                                                             System.out.println(
-                                                                    "Hasil : T °C = " + (5 * fahrenheit - far / 9)
-                                                                            + " °C");
+                                                                    "Hasil : " + (5 * fahrenheit - far / 9) + " °C"
+                                                                            );
                                                             break;
                                                         case 2:
                                                             System.out.println("Anda Memilih Fahrenheit ke Reamur");
                                                             System.out.println(
-                                                                    "Rumus Fahrenheit ke Reamur : (°F + (-32)) x (9 / 4)");
+                                                                    "Rumus Fahrenheit ke Reamur :°F -32 * 4/9");
                                                             System.out.println("Masukan Fahrenheit : ");
                                                             fahrenheit = sc.nextInt();
                                                             System.out.println("Masukan Bilnangan : 32");
                                                             far = sc.nextInt();
                                                             System.out
-                                                                    .println("Hasil : " + (9 * fahrenheit - far / 4));
+                                                                    .println("Hasil : " + ( 4 * fahrenheit - far / 9)+ " °R");
                                                             break;
                                                         default:
                                                             break;
@@ -291,7 +275,6 @@ public class TugasJavaBasic {
                                     break;
                                 case 2:
                                     int meter;
-                                    int meter1;
                                     float meter2;
                                     do {
                                         System.out.println(
@@ -301,40 +284,40 @@ public class TugasJavaBasic {
                                         switch (meter) {
                                             case 1:
                                                 System.out.println("Km = Kilo Meter");
-                                                System.out.print("Masukan = ");
+                                                System.out.print("Masukan meter = ");
                                                 meter2 = sc.nextInt();
-                                                System.out.println("Hasil : " + (meter2 / 10 / 10 / 10) + " Meter");
+                                                System.out.println("Hasil : " + (meter2 / 1000) + " Km =  Kilo Meter");
                                                 break;
                                             case 2:
                                                 System.out.println("Hm = Hekto Meter");
-                                                System.out.print("Masukan : ");
+                                                System.out.print("Masukan meter : ");
                                                 meter2 = sc.nextInt();
-                                                System.out.println("Hasil : Hm = " + (meter2 / 10 / 10) + " Meter");
+                                                System.out.println("Hasil : Hm = " + (meter2 / 100) + " Hm = Hekto Meter");
                                                 break;
                                             case 3:
                                                 System.out.println("Dam = Deka Meter");
-                                                System.out.print("Masukan : ");
+                                                System.out.print("Masukan meter : ");
                                                 meter2 = sc.nextInt();
-                                                System.out.println("Hasil : Dam = " + (meter2 / 10) + " Meter");
+                                                System.out.println("Hasil : Dam = " + (meter2 / 10) + " Dam = Deka Meter");
                                                 break;
                                             case 4:
                                                 System.out.println("Dm = Desi Meter");
-                                                System.out.print("Masukan : ");
-                                                meter1 = sc.nextInt();
-                                                System.out.println("Hasil : Dm = " + (meter1 * 10) + " Meter");
+                                                System.out.print("Masukan meter : ");
+                                                meter2 = sc.nextInt();
+                                                System.out.println("Hasil : Dm = " + (meter2 * 10) + " Dm = Desi Meter");
                                                 break;
                                             case 5:
                                                 System.out.println("Cm = Centi Meter");
-                                                System.out.print("Masukan : ");
-                                                meter1 = sc.nextInt();
-                                                System.out.println("Hasil : Cm = " + (meter1 * 10 * 10) + " Meter");
+                                                System.out.print("Masukan meter : ");
+                                                meter2 = sc.nextInt();
+                                                System.out.println("Hasil : Cm = " + (meter2 * 100) + " Cm = Centi Meter");
                                                 break;
                                             case 6:
                                                 System.out.println(" Mm = Mili Meter");
-                                                System.out.print("Masukan : ");
-                                                meter1 = sc.nextInt();
+                                                System.out.print("Masukan meter : ");
+                                                meter2 = sc.nextInt();
                                                 System.out
-                                                        .println("Hasil : Mm = " + (meter1 * 10 * 10 * 10) + " Meter");
+                                                        .println("Hasil : Mm = " + (meter2 * 1000) + "  Mm = Mili Meter");
                                                 break;
 
                                             default:
@@ -346,7 +329,6 @@ public class TugasJavaBasic {
                                 case 3:
                                     int berat;
                                     float gram;
-                                    int gram1;
                                     do {
                                         System.out.println(
                                                 "Silahkan Pilih : \n 1. Kg = Kilogram \n 2. Hg(ons) = Hektogram \n 3. Dag = Dekagram \n 4. Dg = DesiGram \n 5. Cg = Sentigram \n 6. Mg = Miligram \n 7. Exit");
@@ -355,39 +337,39 @@ public class TugasJavaBasic {
                                         switch (berat) {
                                             case 1:
                                                 System.out.println("Kg = Kilogram");
-                                                System.out.print("Masukan : ");
-                                                gram1 = sc.nextInt();
-                                                System.out.println("Hasil : " + (gram1 * 10 * 10 * 10) + " Gram");
+                                                System.out.print("Masukan Gram : ");
+                                                gram = sc.nextInt();
+                                                System.out.println("Hasil : " + (gram / 1000) + " Kg = Kilogram");
                                                 break;
                                             case 2:
                                                 System.out.println("Hg(ons) = Hektogram");
-                                                System.out.print("Masukan : ");
-                                                gram1 = sc.nextInt();
-                                                System.out.println("Hasil : " + (gram1 * 10 * 10) + " Gram");
+                                                System.out.print("Masukan Gram : ");
+                                                gram = sc.nextInt();
+                                                System.out.println("Hasil : " + (gram / 100) + " Hg(ons) = Hektogram");
                                                 break;
                                             case 3:
                                                 System.out.println("Dag = Dekagram");
-                                                System.out.print("Masukan : ");
-                                                gram1 = sc.nextInt();
-                                                System.out.println("Hasil : " + (gram1 * 10) + " Gram");
+                                                System.out.print("Masukan Gram : ");
+                                                gram = sc.nextInt();
+                                                System.out.println("Hasil : " + (gram / 10) + " Dag = Dekagram");
                                                 break;
                                             case 4:
                                                 System.out.println(" Dg = DesiGram");
-                                                System.out.print("Masukan : ");
+                                                System.out.print("Masukan Gram : ");
                                                 gram = sc.nextInt();
-                                                System.out.println("Hasil : " + (gram / 10) + " Gram");
+                                                System.out.println("Hasil : " + (gram * 10) + "  Dg = DesiGram");
                                                 break;
                                             case 5:
                                                 System.out.println("Cg = Sentigram");
-                                                System.out.print("Masukan : ");
+                                                System.out.print("Masukan Gram : ");
                                                 gram = sc.nextInt();
-                                                System.out.println("Hasil : " + (gram / 10 / 10) + " Gram");
+                                                System.out.println("Hasil : " + (gram * 100) + " Cg = Sentigram");
                                                 break;
                                             case 6:
                                                 System.out.println("Mg = Miligram");
-                                                System.out.print("Masukan : ");
+                                                System.out.print("Masukan Gram : ");
                                                 gram = sc.nextInt();
-                                                System.out.println("Hasil : " + (gram / 10 / 10 / 10) + " Gram");
+                                                System.out.println("Hasil : " + (gram * 1000) + " Mg = Miligram");
                                                 break;
 
                                             default:
@@ -401,7 +383,7 @@ public class TugasJavaBasic {
                     case 3:
                     int rahasia;
                         String angka;
-                        System.out.println("Anda Hurus Input Terlebih Dahulu");
+                        System.out.println("Masukan Kode Rahasia ");
                         angka = sc.next();
                         if (angka.length() > 7 && angka.length() < 10) {
                             System.out.println("Selamat Datang VIP !!!");
@@ -428,13 +410,14 @@ public class TugasJavaBasic {
                                         System.out.println("Hasil : " + angka.toLowerCase());
                                         break;
                                     case 3:
+                                    String reverse;
                                         System.out.println("Reverse");
                                         sc.nextLine();
                                         System.out.print("Masukan Kalimat : ");
-                                        angka = sc.nextLine();
-                                        List<String> list = Arrays.asList(angka.split(""));
+                                        reverse = sc.nextLine();
+                                        List<String> list = Arrays.asList(reverse.split(" "));
                                         Collections.reverse(list);
-                                        System.out.println(String.join("", list));
+                                        System.out.println(String.join(" ", list));
                                         break;
 
                                     default:
@@ -452,7 +435,7 @@ public class TugasJavaBasic {
             } while (bangunan < 4);
             System.out.println("Berhasil Keluar");
         } else {
-            System.out.println("Sistem OFF harus Run Ulang");
+            System.out.println("Akses Ditolak ");
         }sc.close();
     }
 }
